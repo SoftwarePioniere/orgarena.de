@@ -166,3 +166,11 @@ input#subscribe-email.form-control, input#subscribe-email {
     color: #39b54a;
     padding-bottom: 50px;
 }
+
+.hyphensAuto {
+    -moz-hyphens: auto;
+    -o-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
