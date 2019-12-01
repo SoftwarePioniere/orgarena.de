@@ -61,18 +61,18 @@
 	<!-- Ende Cookie Plugin -->
 	
 	<style>
-		OL {
+		#blog-list OL {
 			counter-reset: item;
 			padding-inline-start: 0 !important;
 		}
-		
-		LI {
+
+		#blog-list LI {
 			display: block;
             font-size: 24px;
             color: black;
 		}
-		
-		LI:before {
+
+		#blog-list LI:before {
 			content: counters(item, ".") ".";
 			counter-increment: item;
 			padding-right: 10px;
@@ -82,19 +82,19 @@
 			line-height: 1;
 			color: #121212;
 		}
-        
-        OL LI OL {
+
+		#blog-list OL LI OL {
             margin: 0 0 16px 0;
         }
-        
-        OL LI OL LI {
+
+		#blog-list OL LI OL LI {
             display: block;
             font-size: 14px;
             color: #1d8496;
             margin: 4px 0;
         }
-        
-        OL LI OL LI:before {
+
+		#blog-list OL LI OL LI:before {
 			content: counters(item, ".") ".";
 			counter-increment: item;
 			font-family: "Roboto", sans-serif;
@@ -147,7 +147,7 @@
 
 <section id="page-head-bg">
 	<div class="container">
-		<h1>Impressum</h1>
+		<h1>AGBs</h1>
 	</div>
 </section><!--page-head bg end-->
 <section id="blog-list" class="padding-80">
@@ -155,7 +155,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="blog-item-sec">
-					<h1>AGBs</h1>
+					<h1>Allgemeine Geschäftsbedigungen</h1>
 					
 					<ol>
                         <li>Geltungsbereich der Vertragsbedingungen
@@ -547,6 +547,7 @@
 					<li><a href="/">Startseite</a></li>
 					<li><a href="impressum.html">Impressum</a></li>
 					<li><a href="datenschutz.html">Datenschutz</a></li>
+					<li><a href="agbs.html">AGBs</a></li>
 				</ul>
 			</div>
 		</div>
