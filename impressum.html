@@ -7,6 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta name="apple-itunes-app" content="app-id=1491304373">
+
+    <meta name="smartbanner:title" content="ORGA App">
+    <meta name="smartbanner:author" content="ORGArena GmbH">
+    <meta name="smartbanner:price" content="GET IT ON">
+    <meta name="smartbanner:price-suffix-google" content=" Google Play">
+    <meta name="smartbanner:icon-google" content="img/orga-app/ORGA_App_dunkel.svg">
+    <meta name="smartbanner:button" content="ANZEIGEN">
+    <meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=com.orgarena.orgaapp.prod">
+    <meta name="smartbanner:enabled-platforms" content="android">
+    <meta name="smartbanner:close-label" content="Close">
+    <meta name="smartbanner:disable-positioning" content="true">
+
     <meta name="last-modified" content="2019-08-30">
     <meta name="author" content="ORGArena GmbH">
     <meta name="copyright" content="ORGArena GmbH">
@@ -38,8 +51,15 @@
     <link href="revolution/css/navigation.css" rel="stylesheet">
     <link href="revolution/css/layers.css" rel="stylesheet">
     <link href="revolution/css/settings.css" rel="stylesheet">
+
+    <!--Smart Banner CSS-->
+    <link rel="stylesheet" href="smartbanner.js/dist/smartbanner.min.css">
+
     <!--Software Pioniere css-->
     <link href="css/software-pioniere.css" rel="stylesheet" type="text/css">
+
+    <!--Smart Banner JS-->
+    <script src="smartbanner.js/dist/smartbanner.min.js"></script>
 
     <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -62,9 +82,10 @@
 </head>
 <body data-spy="scroll" data-target="#navigation" data-offset="75">
 
+<div id="smartBannerPlaceholder"></div>
 
 <section id="navigation" class="fixed-navigation">
-    <div class="navbar navbar-default navbar-static-top navbar-transparent" role="navigation" style="height: 100px !important;">
+    <div class="navbar navbar-default navbar-static-top navbar-transparent" role="navigation">
         <div class="container">
             <!--				<div class="navbar-header">-->
             <!--					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">-->
@@ -74,7 +95,7 @@
             <!--					<span class="icon-bar"></span>-->
             <!--				</button>-->
             <a class="" href="index.html">
-                <img src="img/orga-app/ORGArena_dunkel.svg" style="height: 100px" />
+                <img src="img/orga-app/ORGArena_dunkel.svg" class="logo" />
             </a>
         </div>
         <div class="navbar-collapse collapse">
@@ -219,16 +240,20 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-3 copyright">
-                <span>&copy;2019 ORGArena GmbH</span>
+                <span>&copy;2020 ORGArena GmbH</span>
             </div>
-            <div class="col-md-3 col-sm-3 copyright">
-<!--                <ul class="list-inline">-->
-<!--                    <li><a href="https://get.teamviewer.com/3h8px87">TeamViewer</a></li>-->
-<!--                </ul>-->
+            <div class="col-md-4 col-sm-3 copyright footer-app-imgs">
+                <a href="https://apps.apple.com/de/app/orga-app/id1491304373" target="_blank">
+                    <img src="/img/apps/apple-store-badge@2x.png" class="app-img-small app-img-footer-left" alt="Apple App Store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.orgarena.orgaapp.prod" target="_blank">
+                    <img src="/img/apps/google-play-badge@2x.png" class="app-img-small app-img-footer-right" alt="Google Play">
+                </a>
             </div>
-            <div class="col-md-6 col-sm-6 footer-nav">
+            <div class="col-md-5 col-sm-6 footer-nav">
                 <ul class="list-inline">
                     <li><a href="/">Startseite</a></li>
+                    <li><a href="apps.html">Apps</a></li>
                     <li><a href="impressum.html">Impressum</a></li>
                     <li><a href="datenschutz.html">Datenschutz</a></li>
                     <li><a href="agbs.html">AGBs</a></li>
